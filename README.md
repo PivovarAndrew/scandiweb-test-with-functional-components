@@ -1,6 +1,15 @@
+# scandiweb-entry-react-test
+Entry test for junior developer position at Scandiweb. E-commerce shop created with React (with functional components) in bundle with redux. QraphQL with Apollo Client is used to interact with API.
+
+Before running project ensure you have launched this [endpoint](https://github.com/PivovarAndrew/junior-react-endpoint).
+
+The project with build according to this [design](https://www.figma.com/file/MSyCAqVy1UgNap0pvqH6H3/Junior-Frontend-Test-Designs-(Public)?node-id=0%3A1).
+
+For test you can run this [demo](https://andrew-pivovar-scandiweb.herokuapp.com/).
+
 # Getting Started with Create React App and Redux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/).
 
 ## Available Scripts
 
