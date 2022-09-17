@@ -1,0 +1,28 @@
+.container {
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+  margin-top: 12px;
+
+  .info {
+    margin-top: 2px;
+    display: block;
+    text-align: left;
+    font-weight: 300;
+  }
+
+  .qtyChangeActions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .productImage {
+    max-width: 85%;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+  }
+}

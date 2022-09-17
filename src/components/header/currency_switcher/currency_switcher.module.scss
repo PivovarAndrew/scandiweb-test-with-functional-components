@@ -1,0 +1,65 @@
+$hover_shadow: rgba(20, 20, 20, 0.274);
+$li_hover_color: rgb(238, 238, 238);
+
+.container {
+  cursor: pointer;
+  margin-top: 0.9rem;
+  display: flex;
+  max-height: 36px;
+
+  .symbol {
+    font-size: 24px;
+  }
+
+  .chevron svg {
+    margin-left: 12px;
+    width: 10px;
+    height: 30px;
+    font-size: 24px;
+    stroke-width: 1px;
+
+    &.rotated {
+      transform: rotate(180deg);
+    }
+  }
+
+  ul {
+    overflow-y: auto;
+    cursor: pointer;
+    width: 100px;
+    margin-top: 2rem;
+    right: 10%;
+    position: absolute;
+    list-style-type: none;
+    max-height: 32vh;
+
+    li {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      font-size: 22px;
+      margin-top: 8px;
+      height: 2rem;
+    }
+
+    li:hover {
+      background: $li_hover_color;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    right: 30%;
+
+    ul {
+      right: 5%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    margin-top: 0;
+  }
+}

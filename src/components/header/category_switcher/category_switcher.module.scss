@@ -1,0 +1,33 @@
+$selected_category_color: rgb(94, 206, 123);
+
+.name {
+  font-size: 20px;
+  font-weight: normal;
+  text-decoration: none;
+  height: 6vh;
+  box-sizing: border-box;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: 4px;
+  margin-right: 4px;
+  color: black;
+  text-transform: uppercase;
+
+  &:hover {
+    @extend .selected;
+  }
+
+  &.selected {
+    color: $selected_category_color;
+    border-bottom: 3px solid $selected_category_color;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .name {
+    height: 5vh;
+    margin-bottom: 2vh;
+  }
+}

@@ -1,0 +1,71 @@
+.header {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 1em 0 0 2em;
+  text-transform: uppercase;
+  text-align: left;
+  margin-left: 4%;
+}
+
+.container {
+  .totalContainer {
+    width: 250px;
+    margin-top: 2rem;
+    margin-left: 4%;
+    font-size: 22px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    text-align: left;
+
+    .totalLabels {
+      display: block;
+    }
+
+    .totalValues {
+      display: block;
+      font-weight: bold;
+    }
+  }
+
+  .orderButton {
+    background: rgb(94, 206, 123);
+    border: none;
+    margin-top: 1rem;
+    height: 40px;
+    font-size: 12px;
+    color: white;
+    display: block;
+    width: 300px;
+    cursor: pointer;
+    margin-left: 4%;
+    text-transform: uppercase;
+  }
+
+  hr {
+    width: 92%;
+    opacity: 0.4;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    .orderButton {
+      width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .container .totalContainer {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  .container .totalContainer {
+    font-size: 14px;
+    width: 170px;
+  }
+}

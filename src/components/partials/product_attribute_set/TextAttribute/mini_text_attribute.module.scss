@@ -1,0 +1,20 @@
+$container_border_color: rgb(29, 31, 34);
+$active_background_color: rgb(29, 31, 34);
+
+.container {
+  padding: 2.5px;
+  margin-top: 3px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid $container_border_color;
+  font-size: 14px;
+  font-weight: 400;
+
+  min-height: 15px;
+  min-width: 15px;
+
+  &.active {
+    background-color: $active_background_color;
+    color: white;
+  }
+}

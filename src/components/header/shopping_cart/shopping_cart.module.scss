@@ -1,0 +1,69 @@
+$overlay_background: rgba(122, 122, 122, 0.344);
+$shopping_cart_color: rgb(67, 70, 78);
+
+.container {
+  position: relative;
+  margin-top: 1rem;
+
+  .shoppingCart {
+    cursor: pointer;
+    margin-left: 1.3rem;
+    height: 25px;
+    width: 30px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      stroke-width: 0;
+      color: $shopping_cart_color;
+      z-index: 10;
+    }
+
+    .productsCount {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: bold;
+      height: 23px;
+      width: 23px;
+      top: -20%;
+      right: -15%;
+      z-index: 1;
+      border-radius: 50%;
+      background: black;
+      color: white;
+      margin: auto;
+      opacity: 95%;
+
+      &.overflowed {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 9.75vh;
+    background-color: $overlay_background;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    margin-top: 0;
+
+    .shoppingCart .productsCount {
+      top: -5%;
+    }
+
+    .overlay {
+      top: 7.5vh;
+    }
+  }
+}

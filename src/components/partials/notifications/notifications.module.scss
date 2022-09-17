@@ -1,0 +1,19 @@
+$add_notify_background_color: rgb(94, 206, 123);
+$add_notify_text_color: white;
+
+$remove_notify_background_color: rgb(196, 76, 76);
+$remove_notify_text_color: white;
+
+.addNotify {
+  z-index: 500;
+  background-color: $add_notify_background_color;
+  color: $add_notify_text_color;
+  max-width: 50vw;
+}
+
+.removeNotify {
+  z-index: 500;
+  background-color: $remove_notify_background_color;
+  color: $remove_notify_text_color;
+  max-width: 50vw;
+}

@@ -1,0 +1,118 @@
+@import "App.scss";
+
+.container {
+  width: 25%;
+  position: fixed;
+  display: grid;
+  right: 8%;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  background: white;
+
+  span {
+    text-align: left;
+    padding-bottom: 15px;
+  }
+
+  .label {
+    font-weight: bold;
+  }
+
+  .cartProduct {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    max-height: 50vh;
+    position: relative;
+    gap: 1rem;
+    display: grid;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+  }
+
+  .total {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+    .price {
+      @extend .on-right;
+      margin-block-start: 1.33em;
+      margin-block-end: 1.33em;
+    }
+  }
+
+  .cartItemBtn {
+    display: flex;
+    gap: 10px;
+
+    .viewBagBtn {
+      font-size: 14px;
+      font-weight: 500;
+      width: 180px;
+      height: 45px;
+      background: white;
+      border: 1px solid black;
+      cursor: pointer;
+      text-transform: uppercase;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    .checkOutBtn {
+      background: rgb(94, 206, 123);
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+      width: 180px;
+      height: 45px;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .container .cartItemBtn {
+    .viewBagBtn {
+      width: 150px;
+    }
+
+    .checkOutBtn {
+      width: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    .cartItemBtn {
+      display: grid;
+      gap: 10px;
+
+      .viewBagBtn {
+        width: 100%;
+      }
+
+      .checkOutBtn {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .container {
+    top: 7%;
+    right: 13%;
+    width: 70%;
+  }
+}
