@@ -65,3 +65,9 @@ $notify_text_color: white;
     margin-bottom: 2vh;
   }
 }
+
+@media screen and (max-width: 300px) {
+  .container .headerLogo {
+    visibility: hidden;
+  }
+}
